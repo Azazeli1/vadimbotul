@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет — NovaBank</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">N</div>
+        <div>
+          <div class="brand-name">NovaBank</div>
+          <div class="brand-sub">личный кабинет</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Навигация">
+        <a class="nav-item active" href="#" onclick="return false;">Главная</a>
+        <a class="nav-item" href="#" onclick="return false;">Счета</a>
+        <a class="nav-item" href="#" onclick="return false;">Карты</a>
+        <a class="nav-item" href="#" onclick="return false;">Переводы</a>
+        <a class="nav-item" href="#" onclick="return false;">Платежи</a>
+        <a class="nav-item" href="#" onclick="return false;">История</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-mini">
+          <div class="avatar">ВА</div>
+          <div>
+            <div class="user-name">Вадим А.</div>
+            <div class="user-role">Клиент</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Добро пожаловать</p>
+          <h1>Обзор счетов</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost" type="button">Уведомления</button>
+          <button class="btn btn-primary" type="button">Новый перевод</button>
+        </div>
+      </header>
+
+      <section class="grid stats">
+        <article class="card balance-card">
+          <div class="card-label">Общий баланс</div>
+          <div class="balance">₽ 248 560,40</div>
+          <div class="balance-meta positive">+12 430 ₽ за месяц</div>
+        </article>
+
+        <article class="card">
+          <div class="card-label">Основной счёт</div>
+          <div class="amount">₽ 182 340,00</div>
+          <div class="account-number">•••• 4821</div>
+        </article>
+
+        <article class="card">
+          <div class="card-label">Накопительный</div>
+          <div class="amount">₽ 66 220,40</div>
+          <div class="account-number">•••• 9034</div>
+        </article>
+      </section>
+
+      <section class="grid content">
+        <article class="card card-wide">
+          <div class="section-head">
+            <h2>Мои карты</h2>
+            <span class="badge">2 активные</span>
+          </div>
+
+          <div class="cards-row">
+            <div class="bank-card primary-card">
+              <div class="bank-card-top">
+                <span>NovaBank</span>
+                <span class="chip" aria-hidden="true"></span>
+              </div>
+              <div class="bank-card-number">5412 •••• •••• 7823</div>
+              <div class="bank-card-bottom">
+                <span>VADIM A.</span>
+                <span>09/28</span>
+              </div>
+            </div>
+
+            <div class="bank-card secondary-card">
+              <div class="bank-card-top">
+                <span>Virtual</span>
+                <span class="chip" aria-hidden="true"></span>
+              </div>
+              <div class="bank-card-number">4539 •••• •••• 1140</div>
+              <div class="bank-card-bottom">
+                <span>ONLINE</span>
+                <span>12/27</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card quick-actions">
+          <div class="section-head">
+            <h2>Быстрые действия</h2>
+          </div>
+          <div class="actions-grid">
+            <button class="action" type="button">Перевод</button>
+            <button class="action" type="button">Оплата</button>
+            <button class="action" type="button">Пополнение</button>
+            <button class="action" type="button">Выписка</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="card transactions">
+        <div class="section-head">
+          <h2>Последние операции</h2>
+          <span class="muted">Превью</span>
+        </div>
+
+        <div class="table">
+          <div class="table-row table-head">
+            <span>Описание</span>
+            <span>Дата</span>
+            <span>Категория</span>
+            <span class="align-right">Сумма</span>
+          </div>
+          <div class="table-row">
+            <span>Зарплата</span>
+            <span>08.08.2026</span>
+            <span>Доход</span>
+            <span class="align-right positive">+85 000 ₽</span>
+          </div>
+          <div class="table-row">
+            <span>Продуктовый магазин</span>
+            <span>07.08.2026</span>
+            <span>Покупки</span>
+            <span class="align-right negative">−2 430 ₽</span>
+          </div>
+          <div class="table-row">
+            <span>Коммунальные услуги</span>
+            <span>05.08.2026</span>
+            <span>Дом</span>
+            <span class="align-right negative">−6 120 ₽</span>
+          </div>
+          <div class="table-row">
+            <span>Перевод на накопительный</span>
+            <span>03.08.2026</span>
+            <span>Накопления</span>
+            <span class="align-right negative">−15 000 ₽</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
